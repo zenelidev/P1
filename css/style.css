@@ -1,0 +1,122 @@
+
+ul, li{
+    list-style: none;
+    display: inline;
+    padding: 0em;
+    margin: 0em;
+}
+
+a{  
+    text-decoration:none;
+  }
+
+
+.header{
+    display: inline;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.nav{
+    display: inline;
+    width: 50%;
+}
+
+.header__logo{
+    display: inline;
+    padding: 0%;
+    width:3em;
+    margin: 0em;
+}
+
+#search__button{
+    background-color: blue;
+    border-radius: 2em;
+    color: white;
+    
+}
+
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters__title, .filters__list{
+    width: 30% 70%;
+    padding-right: 1.5em;
+}
+.filters__list{
+    margin-top:1.5em;
+
+}
+.filters__item{
+    border: solid;
+    border-radius: 3em;
+    border-color: gray;
+    padding:0.3em;
+
+}
+
+.filters__text{
+    margin:0em;
+}
+.accomodations-popular{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.accomodadations{
+    flex: 2;
+    flex-direction: column;
+}
+
+.popular{
+    flex:1;
+}
+
+.card__img, .accomodations__img{
+    width: 20%;
+}
+
+.acc-card{
+    display: flex;
+}
+
+.accomodadations .acc-card:nth-child(1), .acc-card:nth-child(2), 
+.acc-card:nth-child(3){
+flex:33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#site-footer{
+    display: flex;
+    background-color: gray;
+    width: 100%;
+}
+
+
+.footer__item{
+    display: block;
+
+}
+
+.propos, .heb, .assist{
+    flex: 5;
+    padding: 3em;;
+
+}
+
+.assist{
+    padding:3em;
+    background-color: gray;
+}
