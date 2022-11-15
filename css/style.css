@@ -1,3 +1,7 @@
+body{
+    max-width: 1400px;
+}
+
 
 ul, li{
     list-style: none;
@@ -26,9 +30,6 @@ header{
 
 .header__logo{
     display: inline;
-    padding: 0%;
-    width:3em;
-    margin: 0em;
 }
 
 #search__button{
@@ -98,21 +99,13 @@ header{
 }
 
 
-.footer, .footer__container{
+footer{
     display: flex;
-    width: 32%;
-    
+    width: 100%;
+    justify-content: space-around;
 }
 
-.footer__container{
-   display: block;
-
-}
-
-
-.footer__item{
+.footer__list{
+    display: flex;
     flex-direction: column;
-
 }
-
-
