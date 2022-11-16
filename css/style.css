@@ -1,3 +1,7 @@
+body{
+    max-width: 1400px;
+}
+
 
 ul, li{
     list-style: none;
@@ -6,13 +10,15 @@ ul, li{
     margin: 0em;
 }
 
+
 a{  
     text-decoration:none;
   }
 
+  
 
-.header{
-    display: inline;
+header{
+    display: flex;
     justify-content: space-between;
     white-space: nowrap;
 }
@@ -24,9 +30,6 @@ a{
 
 .header__logo{
     display: inline;
-    padding: 0%;
-    width:3em;
-    margin: 0em;
 }
 
 #search__button{
@@ -59,6 +62,20 @@ a{
 .filters__text{
     margin:0em;
 }
+
+.accomodations__card, .popular__card, .activities__card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* 5px rounded corners */
+    margin:2em;
+  }
+  
+  
+  /* Add rounded corners */
+  img {
+    border-radius: 10px;
+  }
+
 .accomodations-popular{
     display: flex;
     flex-wrap: nowrap;
@@ -77,46 +94,18 @@ a{
     width: 20%;
 }
 
-.acc-card{
+.accomodations__card{
     display: flex;
 }
 
-.accomodadations .acc-card:nth-child(1), .acc-card:nth-child(2), 
-.acc-card:nth-child(3){
-flex:33%;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-#site-footer{
+footer{
     display: flex;
-    background-color: gray;
     width: 100%;
+    justify-content: space-around;
 }
 
-
-.footer__item{
-    display: block;
-
-}
-
-.propos, .heb, .assist{
-    flex: 5;
-    padding: 3em;;
-
-}
-
-.assist{
-    padding:3em;
-    background-color: gray;
+.footer__list{
+    display: flex;
+    flex-direction: column;
 }
