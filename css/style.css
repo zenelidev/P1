@@ -1,13 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
 body{
     max-width: 1400px;
+    margin: 0 auto;
 }
 
 
 ul, li{
     list-style: none;
     display: inline;
-    padding: 0em;
-    margin: 0em;
 }
 
 
@@ -15,7 +20,6 @@ a{
     text-decoration:none;
   }
 
-  
 
 header{
     display: flex;
