@@ -6,7 +6,7 @@
 
 body{
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 4em; /* change back to auto */
 }
 
 
@@ -24,16 +24,23 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-    white-space: nowrap;
+    padding: 50px 0;
 }
 
-.nav{
-    display: inline;
-    width: 50%;
+.header__nav{
+    flex-basis: 15%;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
 }
 
+.nav__item:hover{
+    border-top: 4px solid rgb(43, 0, 255);
+    color: black;0
+}
 .header__logo{
-    display: inline;
+    width:65px;
 }
 
 #search__button{
@@ -43,66 +50,102 @@ header{
     
 }
 
-.filters{
+.search__text{
+    margin-bottom: 0.7em;
+}
+
+.filters {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 10px 0;
 }
-.filters__title, .filters__list{
-    width: 30% 70%;
-    padding-right: 1.5em;
-}
+
 .filters__list{
+    display: flex;
     margin-top:1.5em;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+
+
 
 }
 .filters__item{
+    display: flex;
     border: solid;
     border-radius: 3em;
     border-color: gray;
-    padding:0.3em;
+    justify-content: space-around;
+    width: auto;
 
 }
 
 .filters__text{
-    margin:0em;
+    flex-basis: 100%;
+    padding: 0.5em 0;
 }
 
 .accomodations__card, .popular__card, .activities__card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
-    border-radius: 10px; /* 5px rounded corners */
-    margin:2em;
-  }
-  
-  
-  /* Add rounded corners */
-  img {
     border-radius: 10px;
-  }
+    padding: 2px 16px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 200px;
 
+}
+.accomodations__img, .popular__img {
+    width: 100%;
+    HEIGHT: 100PX;
+    MAX-WIDTH: fit-content;
+}
 .accomodations-popular{
     display: flex;
-    flex-wrap: nowrap;
+    margin-top: 2em;
 }
 
-.accomodadations{
-    flex: 2;
+.accomodations{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+
+}
+
+.accomodations__title{
+    display: flex;
+    flex-basis: 100%;
+}
+
+
+
+.accomodations__plus{
+    display: flex;
+    flex-basis: 100%;
+}
+.popular{
+    background-color: rgb(157, 18, 18);
+    display: flex;
     flex-direction: column;
 }
 
-.popular{
-    flex:1;
-}
-
-.card__img, .accomodations__img{
-    width: 20%;
-}
-
-.accomodations__card{
+.popular__figure{
     display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
+.activities{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.activities__title{
+    display: flex;
+    flex-basis: 100%;
+}
 footer{
     display: flex;
     width: 100%;
