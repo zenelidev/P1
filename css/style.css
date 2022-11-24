@@ -4,41 +4,77 @@
     margin:0;
 }
 
+/* Formatting typo */
+p, h1,h2,h3,h4,ul,li,a,input,span{
+    font-family: 'Raleway', sans-serif;
+}
+a{  
+    text-decoration:none;
+}
+ul, li{
+    list-style: none;
+    display: inline;
+}  
+.fa-magnifying-glass:before, .fa-search:before {
+    content: "\f002";
+    display: none;
+}
+/* -------------------------- */
+
+
 body{
     max-width: 1400px;
     margin: 0 4em; /* change back to auto */
 }
 
 
-ul, li{
-    list-style: none;
-    display: inline;
+
+  
+/* adjusting the colors of icons/buttons */
+.fa-solid, .fas{
+    color: #0065FC;
 }
 
+.fa-location-dot:before, .fa-map-marker-alt:before {
+    content: "\f3c5";
+    color: black;
+}
 
-a{  
-    text-decoration:none;
-  }
+.fa-chart-line:before, .fa-line-chart:before {
+    content: "\f201";
+    color: black;
+}
+/* ---------------------------------------------- */
+
+
+/* Hover effects */
+.nav__item:hover{
+    border-top: 4px solid #0065FC;
+}
+a:hover{
+    color:black;
+}
+.filters__item:hover{
+    background-color:#DEEBFF
+}
+/* ---------------------------------------------- */
 
 
 header{
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 .header__nav{
-    flex-basis: 15%;
+    flex-basis: 25%;
 }
 .nav__list{
     display: flex;
     justify-content: space-between;
 }
 
-.nav__item:hover{
-    border-top: 4px solid rgb(43, 0, 255);
-    color: black;0
-}
+
 .header__logo{
     width:65px;
 }
@@ -59,14 +95,18 @@ header{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
-    padding: 10px 0;
+}
+
+.filters__title{
+    display: flex;
+    flex-basis: 10%;
 }
 
 .filters__list{
     display: flex;
     margin-top:1.5em;
-    justify-content: space-evenly;
-    flex-basis: 50%;
+    justify-content: flex-start;
+    flex-basis: 90%;
 
 
 
@@ -75,9 +115,11 @@ header{
     display: flex;
     border: solid;
     border-radius: 3em;
-    border-color: gray;
+    border-color: #F2F2F2;
     justify-content: space-around;
     width: auto;
+    padding: 10px;
+    margin-right:15px;
 
 }
 
@@ -91,16 +133,17 @@ header{
     transition: 0.3s;
     border-radius: 10px;
     padding: 2px 16px;
+    background-color: white;
     display: flex;
     align-self: center;
     flex-direction: column;
-    width: 200px;
+    max-width: 200px;
+    margin: auto;
 
 }
-.accomodations__img, .popular__img {
+.accomodations__img, .popular__img, .activities__card_img {
     width: 100%;
-    HEIGHT: 100PX;
-    MAX-WIDTH: fit-content;
+    object-fit: contain;
 }
 .accomodations-popular{
     display: flex;
@@ -110,13 +153,16 @@ header{
 .accomodations{
     display: flex;
     flex-wrap: wrap;
-    background-color: grey;
+    background-color: #F2F2F2;
+    justify-content: space-evenly;
+    flex-basis: 70%;
 
 }
 
 .accomodations__title{
     display: flex;
     flex-basis: 100%;
+    align-items: center;
 }
 
 
@@ -126,30 +172,40 @@ header{
     flex-basis: 100%;
 }
 .popular{
-    background-color: rgb(157, 18, 18);
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    flex-basis: 30%;
 }
 
-.popular__figure{
+.popular__title{
+    display: flex;
+    flex-basis: 100%;
+}
+
+.popular__figure, .accomodations__figure{
     display: flex;
     flex-direction: column;
-    width: 300px;
 }
 
 .activities{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .activities__title{
     display: flex;
     flex-basis: 100%;
 }
+
+
+
 footer{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-color: #F2F2F2;
 }
 
 .footer__list{
