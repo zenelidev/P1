@@ -19,6 +19,24 @@ ul, li{
     content: "\f002";
     display: none;
 }
+
+.search__title {
+    font-size: x-large;
+    padding-bottom: none;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
+
+.search__word{
+    font-weight: 900;
+}
+
+.filters__item a {
+    font-size: large;
+    font-weight: 600;
+    padding-right: 10px;
+}
 /* -------------------------- */
 
 
@@ -48,6 +66,11 @@ body{
 
 
 /* Hover effects */
+.nav__item{
+    border-top: 4px solid transparent;
+    padding-top: 4em;
+}
+
 .nav__item:hover{
     border-top: 4px solid #0065FC;
 }
@@ -63,29 +86,32 @@ a:hover{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 50px 0 0;
+    align-items: flex-end;
 }
 
 .header__nav{
-    flex-basis: 25%;
+    flex-basis: 36%;
 }
 .nav__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
+
 
 
 .header__logo{
     width:65px;
+    height: 25px;
 }
 .search__form{
     display: flex;
+    margin-top: 1em;
 }
 #search__button {
     padding: 8px;
     background-color: #0065fc;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     color: white;
     border-color: transparent;
 }
@@ -106,6 +132,7 @@ header{
 
 .search__text{
     margin-bottom: 0.7em;
+    margin-top: 0.6em;
 }
 
 .filters {
@@ -117,11 +144,12 @@ header{
 
 .filters__title{
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 7%;
 }
 
 .filters__list{
     display: flex;
+    flex-wrap: wrap;
     margin-top:1.5em;
     justify-content: flex-start;
     flex-basis: 90%;
@@ -134,7 +162,7 @@ header{
     border: solid;
     border-radius: 3em;
     border-color: #F2F2F2;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: auto;
     padding: 10px;
     margin-right:15px;
@@ -146,6 +174,20 @@ header{
     padding: 0.5em 0;
 }
 
+.filters__icon{
+    PADDING-RIGHT: 10PX;
+    padding-top: 3PX;
+    padding-left:10px;
+}
+.fa-info{
+    border: solid;
+    border-color: #f2f2f2;
+    border-radius: 50%;
+    PADDING: 6PX;
+    padding-left:10px;
+    HEIGHT: 31PX;
+    WIDTH: 31PX;
+}
 .accomodations__card, .popular__card, .activities__card {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
@@ -178,14 +220,15 @@ header{
 }
 
 .activities__card-img{
+    object-fit: cover;
     max-width: 100%;
-    height: ;
+    HEIGHT: 244PX;
 }
 
 .activities__link{
     display: flex;
     height: 300px;
-    flex-basis: 23%.
+    flex-basis: 23%;
 }
 /* ------------------------- */
 
@@ -245,9 +288,15 @@ footer{
     width: 100%;
     justify-content: space-around;
     background-color: #F2F2F2;
+    padding: 35px;
 }
 
 .footer__list{
     display: flex;
     flex-direction: column;
+    line-height: 29px;
+}
+
+.footer__title{
+    padding-bottom: 20px;
 }
