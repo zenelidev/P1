@@ -7,8 +7,13 @@
       name="decription"
       content="Booki le site de location d'Hébergements et des activités à faire dans toutes les villes"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/21e8d4cf36.js"
       crossorigin="anonymous"
@@ -17,8 +22,8 @@
   </head>
   <body>
     <header>
-      <img class="header__logo" src="images/Booki.png" alt="Logo de booki" />
-      <nav>
+      <img class="header__logo" src="./images/logo/Booki@3x.png" alt="Logo de booki" />
+      <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#accomodations">Hébergements</a></li>
           <li class="nav__item"><a href="#activites">Activités</a></li>
@@ -31,8 +36,8 @@
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p class="search__text">En plein centre ville ou en plein nature</p>
-        <form action="#">
-          <label for="search">
+        <form action="#" class="search__form">
+          <label for="search" class="search__icon">
             <i class="fa-solid fa-location-dot icon"></i>
           </label>
           <input
@@ -42,7 +47,7 @@
             placeholder="Marseille, France"
           />
           <button type="submit" id="search__button">
-            <span>Rechercher</span>
+            <span class="search__word">Rechercher</span>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
@@ -52,17 +57,17 @@
         <h2 class="filters__title">Filtres</h2>
         <ul class="filters__list">
           <li class="filters__item">
-            <i class="fa-sharp fa-solid fa-money-bill-wave"></i
+            <i class="fa-sharp fa-solid fa-money-bill-wave filters__icon"></i
             ><a href="#">Economique</a>
           </li>
           <li class="filters__item">
-            <i class="fa-solid fa-person"></i><a href="#">Familial</a>
+            <i class="fa-solid fa-person filters__icon"></i><a href="#">Familial</a>
           </li>
           <li class="filters__item">
-            <i class="fa-solid fa-heart"></i><a href="#">Romantique</a>
+            <i class="fa-solid fa-heart filters__icon"></i><a href="#">Romantique</a>
           </li>
           <li class="filters__item">
-            <i class="fa-solid fa-dog"></i><a href="#">Animaux Autorisés</a>
+            <i class="fa-solid fa-dog filters__icon"></i><a href="#">Animaux Autorisés</a>
           </li>
         </ul>
         <p class="filters__text">
@@ -73,9 +78,9 @@
       <div class="accomodations-popular" id="accomodations-popular">
         <section class="accomodations" id="accomodations">
           <h2 class="accomodations__title">Hébergements à Marseille</h2>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
-              <figure class="accomodation__figure">
+              <figure class="accomodations__figure">
                 <img
                   class="accomodations__img"
                   src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -97,13 +102,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
               <figure class="accomodations__figure">
                 <img
@@ -128,13 +133,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
               <figure class="accomodations__figure">
                 <img
@@ -159,13 +164,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
               <figure class="accomodations__figure">
                 <img
@@ -190,13 +195,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
               <figure class="accomodations__figure">
                 <img
@@ -221,13 +226,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="accomodations__link"
             ><article class="accomodations__card">
               <figure class="accomodations__figure">
                 <img
@@ -252,20 +257,20 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="accomodations__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#">Afficher plus</a>
+          <a href="#" class="accomodations__plus">Afficher plus</a>
         </section>
 
         <section class="popular" id="popular">
           <h2 class="popular__title">
             Les plus populaires <i class="fa-solid fa-chart-line"> </i>
           </h2>
-          <a href="#"
+          <a href="#" class="popular__link"
             ><article class="popular__card">
               <figure class="popular__figure">
                 <img
@@ -274,7 +279,7 @@
                   alt="chambre luxieuse"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title">Hôtel de la mer</h3>
+                  <h3 class="popular__title-card">Hôtel de la mer</h3>
                   <p class="popular__price">Nuit à partir de 46€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
@@ -290,13 +295,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="popular__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="popular__link"
             ><article class="popular__card">
               <figure class="popular__figure">
                 <img
@@ -305,7 +310,7 @@
                   alt="chambre style rustique avec du bois"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title">Hôtel de la mer</h3>
+                  <h3 class="popular__title-card">Hôtel de la mer</h3>
                   <p class="popular__price">Nuit à partir de 46€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
@@ -321,13 +326,13 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="popular__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
               </figure></article
           ></a>
-          <a href="#"
+          <a href="#" class="popular__link"
             ><article class="popular__card">
               <figure class="popular__figure">
                 <img
@@ -336,7 +341,7 @@
                   alt="chambre double avec grand lit pour une ou deux personnes"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title">Hôtel de la mer</h3>
+                  <h3 class="popular__title-card">Hôtel de la mer</h3>
                   <p class="popular__price">Nuit à partir de 46€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
@@ -352,7 +357,7 @@
                       <i class="fa-solid fa-star active"></i>
                     </li>
                     <li class="popular__star">
-                      <i class="fa-solid fa-star active"></i>
+                      <i class="fa-solid fa-star inactive"></i>
                     </li>
                   </ul>
                 </figcaption>
@@ -362,7 +367,7 @@
       </div>
       <section class="activities" id="activities-marseille">
         <h2 class="activities__title">Activités à Marseille</h2>
-        <a href="#"
+        <a href="#" class="activities__link"
           ><figure class="activities__card">
             <img
               class="activities__card-img"
@@ -375,7 +380,7 @@
           </figure></a
         >
 
-        <a href="#">
+        <a href="#" class="activities__link">
           <figure class="activities__card">
             <img
               class="activities__card-img"
@@ -383,27 +388,27 @@
               alt="Fort de pomègues"
             />
             <figcaption class="activities__content">
-              <h4 class="activities__card-title">Fort de Pomeguès</h4>
+              <h3 class="activities__card-title">Fort de Pomeguès</h3>
             </figcaption>
           </figure></a
         >
 
-        <a href="#"
+        <a href="#" class="activities__link"
           ><figure class="activities__card">
             <img
               class="activities__card-img"
               src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="Parc national des calanques"
             />
-            <figcaption class="activites__content">
-              <h4 class="activities__card-title">
+            <figcaption class="activities__content">
+              <h3 class="activities__card-title">
                 Parc national des Calanques
-              </h4>
+              </h3>
             </figcaption>
           </figure></a
         >
 
-        <a href="#">
+        <a href="#" class="activities__link">
           <figure class="activities__card">
             <img
               class="activities__card-img"
@@ -411,7 +416,7 @@
               alt="Notre dame de la garde, tout en hauteur de la ville"
             />
             <figcaption class="activities__content">
-              <h4 class="activities__card-title">Notre-Dame-de-la-garde</h4>
+              <h3 class="activities__card-title">Notre-Dame-de-la-garde</h3>
             </figcaption>
           </figure></a
         >
