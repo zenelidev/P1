@@ -81,17 +81,21 @@ body{
     align-items: center;
     flex-basis: 50%;
     justify-content: center;
-    height: 21vh;
+    height: 100px;
 }
 
 .nav__item:hover{
     border-top: 4px solid #0065FC;
+    
 }
-a:hover{
-    color:#0065FC;
+.nav__item:hover a{
+    color: #0065FC;
+}
+.nav__item a {
+    color: black;
 }
 
-.filters__list a:hover{
+.filters__list a, .accomodations__plus, .accomodations__content h3, .accomodations__content p, .popular__content h3, .popular__content p, .activities__card-title, .footer__item a{
     color: black;
 }
 .filters__item:hover{
@@ -104,11 +108,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 21vh;
+    height: 100px;
 }
 
 .header__nav{
-    flex-basis: 36%;
+    flex-basis: 30%;
 }
 .nav__list{
     display: flex;
@@ -119,28 +123,32 @@ header{
 
 .header__logo{
     width:65px;
-    height: 25px;
 }
 .search__form{
     display: flex;
     margin-top: 1em;
+    height: 45px;
 }
 #search__button {
-    padding: 8px;
     background-color: #0065fc;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     color: white;
     border-color: transparent;
+    width: 121PX;
 }
 
 .search__icon{
-    BORDER: SOLID;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border: solid;
     border-color: #f2f2f2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 8px;
     background-color: #f2f2f2;
+    width: 45px;
 }
 #search{
     padding: 8px;
@@ -148,6 +156,8 @@ header{
     border-color: #f2f2f2;
     color: black;
     font-weight: bolder;
+    width: 100%;
+    max-width: 200px;
 }
 
 .search__text{
@@ -155,6 +165,10 @@ header{
     margin-top: 0.6em;
 }
 
+input::placeholder{
+    color:black;
+    opacity: 1;
+}
 .filters {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +206,11 @@ header{
 
 .filters__text{
     flex-basis: 100%;
-    padding: 2.5em 0;
+    padding-top: 30px;
+}
+
+.filters__text i{
+    display: inline-flex;
 }
 
 .filters__icon{
@@ -221,7 +239,7 @@ header{
 .accomodations__card, .popular__card, .activities__card {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 6px 6px;
     background-color: white;
     display: flex;
@@ -229,20 +247,23 @@ header{
     flex-direction: column;
     flex-basis: 100%;
 }
-.activities__card{
-    padding: 0%;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+.activities__card {
+    padding: 0;
+    border-radius:20px;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow-y: hidden;
 }
-
 .accomodations__card{
-    padding:6px
+    padding:6px;
+    border-radius: 20px;
 }
 
 .accomodations__content {
-    PADDING: 7PX;
+    padding:7px;
 }
-.accomodations__star{
+.accomodations__star, .popular__star{
     font-size: small;
 }
 
@@ -266,7 +287,7 @@ header{
     width: 100%;
     height: 142px;
     object-fit: cover;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 .accomodations__link{
     display: flex;
@@ -282,7 +303,7 @@ header{
 
 .popular__img {
     width: 125px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 15px 0px 0px 15px;
     height: 142px;
     object-fit: cover;
 }
@@ -323,12 +344,13 @@ header{
 }
 
 .activities__card-img {
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     object-fit: cover;
     max-width: 100%;
-    HEIGHT: 380PX;
-    min-width: 300px;
+    height: 100%;
+    flex:1;
+    overflow-y: hidden;
 }
 
 .activities__link{
@@ -338,7 +360,14 @@ header{
 }
 
 .activities__content{
-    padding:20px;
+    display: flex;
+    align-items: center;
+    flex-basis: 80px;
+    padding: 0px 17px;
+}
+
+.activities__card-title{
+    width: 96%;
 }
 /* ------------------------- */
 
@@ -348,9 +377,9 @@ header{
     background-color: #F2F2F2;
     justify-content: space-between;
     flex-basis: 68%;
-    padding: 6VH;
+    padding: 50px;
     GAP: 20PX;
-    border-radius: 4%;
+    border-radius: 2%;
 }
 
 .accomodations__title{
@@ -373,9 +402,9 @@ header{
     flex-direction: column;
     flex-basis: 28%;
     justify-content: space-evenly;
-    padding: 8VH;
+    padding: 50px;
     gap: 19px;
-    border-radius: 4%;
+    border-radius: 2%;
 }
 
 .popular__title{
@@ -394,6 +423,7 @@ header{
 .activities__title{
     display: flex;
     flex-basis: 100%;
+    margin-bottom: 20px;
 }
 
 
@@ -404,6 +434,7 @@ footer{
     background-color: #F2F2F2;
     padding: 35px;
     justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .footer__container{
