@@ -86,9 +86,11 @@ body{
 
 .nav__item:hover{
     border-top: 4px solid #0065FC;
+    
+}
+.nav__item:hover a{
     color: #0065FC;
 }
-
 .nav__item a {
     color: black;
 }
@@ -121,7 +123,6 @@ header{
 
 .header__logo{
     width:65px;
-    height: 25px;
 }
 .search__form{
     display: flex;
@@ -205,7 +206,7 @@ input::placeholder{
 
 .filters__text{
     flex-basis: 100%;
-    padding: 2.5em 0;
+    padding-top: 30px;
 }
 
 .filters__text i{
@@ -347,8 +348,9 @@ input::placeholder{
     border-top-right-radius: 15px;
     object-fit: cover;
     max-width: 100%;
-    HEIGHT: 445PX;
-    min-width: 300px;
+    height: 100%;
+    flex:1;
+    overflow-y: hidden;
 }
 
 .activities__link{
@@ -359,9 +361,9 @@ input::placeholder{
 
 .activities__content{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    flex-basis: 10%;
+    flex-basis: 80px;
+    padding: 0px 17px;
 }
 
 .activities__card-title{
@@ -375,9 +377,9 @@ input::placeholder{
     background-color: #F2F2F2;
     justify-content: space-between;
     flex-basis: 68%;
-    padding: 20px;
+    padding: 50px;
     GAP: 20PX;
-    border-radius: 4%;
+    border-radius: 2%;
 }
 
 .accomodations__title{
@@ -400,9 +402,9 @@ input::placeholder{
     flex-direction: column;
     flex-basis: 28%;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 50px;
     gap: 19px;
-    border-radius: 4%;
+    border-radius: 2%;
 }
 
 .popular__title{
