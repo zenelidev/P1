@@ -452,3 +452,46 @@ footer{
     padding-bottom: 20px;
     font-size: larger;
 }
+
+/* ---------------- Tablet version classes ------------------------*/
+
+@media only screen and (min-device-width: 768px){
+
+    .popular{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 90%;
+    }
+
+    .accomodations-popular{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filters__list{
+        flex-wrap: nowrap;
+        padding:0;
+    }
+
+    .filters__item i, .filters__item a{
+        display: flex;
+        align-items: center;
+    }
+
+    .filters__item a{
+        padding:0;
+        font-size: small;
+    }
+
+    .popular__title{
+        flex-basis: 100%;
+    }
+
+    .popular__figure{
+        width: 100%;
+    }
+
+    .popular__img{
+        width: 90px;
+    }
+}
