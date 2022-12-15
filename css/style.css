@@ -455,7 +455,7 @@ footer{
 
 /* ---------------- Tablet version classes ------------------------*/
 
-@media only screen and (min-device-width: 768px){
+@media only screen and (max-device-width: 768px){
 
     .popular{
         flex-direction: row;
@@ -493,5 +493,8 @@ footer{
 
     .popular__img{
         width: 90px;
+    }
+    .activities__link{
+        height:267px;
     }
 }
