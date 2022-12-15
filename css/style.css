@@ -452,3 +452,69 @@ footer{
     padding-bottom: 20px;
     font-size: larger;
 }
+
+/* ---------- Mobile queries --------------*/
+
+@media only screen and (max-width:412px){
+    header{
+        flex-wrap: wrap;
+
+    }
+
+    .filters__list{
+        flex-basis:97%;
+    }
+
+    .filters__item{
+        flex-basis: 44%;
+    }
+
+    .accomodations-popular{
+        flex-wrap: wrap-reverse;
+    }
+
+    .accomodations__plus{
+        display: none;
+    }
+
+    .accomodations{
+        flex-wrap: nowrap;
+        flex-basis: auto;
+        flex-direction: column;
+        background-color: white;
+        padding:15px;
+    }
+
+    .accomodations__img{
+        width: 350px;
+    }
+
+    .popular{
+        padding:15px;
+    }
+
+    .activities{
+        flex-direction: column;
+        gap:30px;
+    }
+    .activities__title{
+        width: 125px;
+    }
+
+    .activities__link{
+        flex-basis: auto;
+        height: 250px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+   .footer__container{
+        margin-bottom: 27px;
+   }
+
+
+
+
+
+}
