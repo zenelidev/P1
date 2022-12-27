@@ -323,7 +323,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     flex-basis: 56%;
-    justify-content: flex-end;
+    padding-top: 10px;
 }
 
 
@@ -394,7 +394,7 @@ input::placeholder{
     flex-basis: 100%;
     font-weight: 900;
     font-size: larger;
-    padding: 3vh;
+    padding: 10px;
 }
 .popular {
     background-color: #F2F2F2;
@@ -417,7 +417,7 @@ input::placeholder{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 15vh;
+    margin-top: 100px;
 }
 
 .activities__title{
@@ -451,6 +451,52 @@ footer{
 .footer__title{
     padding-bottom: 20px;
     font-size: larger;
+}
+
+/* ---------------- Tablet version classes ------------------------*/
+
+@media only screen and (max-device-width: 768px){
+
+    .popular{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 90%;
+    }
+
+    .accomodations-popular{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filters__list{
+        flex-wrap: nowrap;
+        padding:0;
+    }
+
+    .filters__item i, .filters__item a{
+        display: flex;
+        align-items: center;
+    }
+
+    .filters__item a{
+        padding:0;
+        font-size: small;
+    }
+
+    .popular__title{
+        flex-basis: 100%;
+    }
+
+    .popular__figure{
+        width: 100%;
+    }
+
+    .popular__img{
+        width: 90px;
+    }
+    .activities__link{
+        height:267px;
+    }
 }
 
 /* ---------- Mobile queries --------------*/
