@@ -323,7 +323,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     flex-basis: 56%;
-    justify-content: flex-end;
+    padding-top: 10px;
 }
 
 
@@ -394,7 +394,7 @@ input::placeholder{
     flex-basis: 100%;
     font-weight: 900;
     font-size: larger;
-    padding: 3vh;
+    padding: 10px;
 }
 .popular {
     background-color: #F2F2F2;
@@ -417,7 +417,7 @@ input::placeholder{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 15vh;
+    margin-top: 100px;
 }
 
 .activities__title{
