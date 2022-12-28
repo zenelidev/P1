@@ -501,7 +501,7 @@ footer{
 
 /* ---------- Mobile queries --------------*/
 
-@media only screen and (max-width:412px){
+@media only screen and (max-width:768px){
     header{
         flex-wrap: wrap;
 
