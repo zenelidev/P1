@@ -378,7 +378,7 @@ input::placeholder{
     justify-content: space-between;
     flex-basis: 68%;
     padding: 50px;
-    GAP: 20PX;
+    GAP: 19PX;
     border-radius: 2%;
 }
 
@@ -455,7 +455,7 @@ footer{
 
 /* ---------------- Tablet version classes ------------------------*/
 
-@media only screen and (max-device-width: 768px){
+@media only screen and (min-device-width: 769px) and (max-device-width:992px){
 
     .popular{
         flex-direction: row;
@@ -481,6 +481,8 @@ footer{
     .filters__item a{
         padding:0;
         font-size: small;
+        display: flex;
+        align-items: flex-end;
     }
 
     .popular__title{
@@ -497,4 +499,119 @@ footer{
     .activities__link{
         height:267px;
     }
+}
+
+/* ---------- Mobile queries --------------*/
+
+@media only screen and (max-width:768px){
+    body{
+        width: fit-content;
+    }
+    main{
+        margin: 0 25px;
+    }
+
+    header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .header__logo {
+    width: 84px;
+    height: 27px;
+    margin-top: 35px;
+    }
+
+    .header__nav{
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .nav__item:hover{
+        border-bottom: 4px solid #0065FC;
+        border-top: 0;
+    }
+
+    .nav__list{
+        width: 100%;
+        font-size: x-large;
+    }
+
+    .search__title{
+        font-size: xx-large;
+    }
+
+    .filters__list{
+        flex-basis:97%;
+    }
+
+    .filters__text{
+        font-size: larger;
+        display: flex;
+    }
+
+    .filters__text i {
+        margin-right:9px;
+    }
+
+    .fa-info{
+        align-self: flex-start;
+    }
+
+    .filters__item{
+        flex-basis: 44%;
+    }
+
+    .accomodations-popular{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .accomodations__plus{
+        display: none;
+    }
+
+    .accomodations{
+        flex-wrap: nowrap;
+        flex-basis: auto;
+        flex-direction: column;
+        background-color: white;
+        padding:15px;
+    }
+
+    .accomodations__img{
+        width: 350px;
+    }
+
+    .popular{
+        padding:15px;
+    }
+
+    .activities{
+        flex-direction: column;
+        gap:30px;
+    }
+    .activities__title{
+        width: 125px;
+        margin-bottom: -29px;
+    }
+
+    .activities__link{
+        flex-basis: auto;
+        height: 250px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+   .footer__container{
+        margin-bottom: 27px;
+   }
+
+
+
+
+
 }
