@@ -14,9 +14,9 @@ a{
 ul, li{
     list-style: none;
     display: inline;
-}  
-.fa-magnifying-glass:before, .fa-search:before {
-    content: "\f002";
+}
+
+.search__glass{
     display: none;
 }
 
