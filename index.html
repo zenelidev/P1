@@ -9,14 +9,14 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/normalize.css"/>
+    <script
+    src="https://kit.fontawesome.com/21e8d4cf36.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/21e8d4cf36.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
   </head>
   <body>
     <header>
@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <section class="search" id="search-bar">
+      <section class="search">
         <h1 class="search__title">
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
@@ -40,11 +40,11 @@
           </label>
           <input
             type="text"
-            id="search"
+            class="search__input"
             name="search"
             placeholder="Marseille, France"
           />
-          <button type="submit" id="search__button">
+          <button type="submit" class="search__button">
             <span class="search__word">Rechercher</span>
             <i class="fa-solid fa-magnifying-glass search__glass"></i>
           </button>
@@ -146,8 +146,8 @@
                   alt=" lit dans chambre partagée au sein d'une auberge de jeunesse"
                 />
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__subtitle">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Hôtel Les mouettes</h3>
+                  <p class="accomodations__price">Nuit à partir de 76€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -208,8 +208,8 @@
                   alt="twin"
                 />
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__subtitle">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Auberge Le Panier</h3>
+                  <p class="accomodations__price">Nuit à partir de 23€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -239,8 +239,8 @@
                   alt="chambre lumineuse"
                 />
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__subtitle">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Hôtel Chez Amina</h3>
+                  <p class="accomodations__price">Nuit à partir de 96€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -277,8 +277,8 @@
                   alt="chambre luxieuse"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Hôtel Le soleil du matin</h3>
+                  <p class="popular__price">Nuit à partir de 128€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -308,8 +308,8 @@
                   alt="chambre style rustique avec du bois"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Chambres d'hôtes Au coeur de l'eau</h3>
+                  <p class="popular__price">Nuit à partir de 71€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -339,8 +339,8 @@
                   alt="chambre double avec grand lit pour une ou deux personnes"
                 />
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Hôtel Bleu et Blanc</h3>
+                  <p class="popular__price">Nuit à partir de 68€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -369,7 +369,7 @@
           ><figure class="activities__card">
             <img
               class="activities__card-img"
-              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="Vieux port dans le coeur de Marseille"
             />
             <figcaption class="activities__content">
@@ -410,7 +410,7 @@
           <figure class="activities__card">
             <img
               class="activities__card-img"
-              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="Notre dame de la garde, tout en hauteur de la ville"
             />
             <figcaption class="activities__content">
