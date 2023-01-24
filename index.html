@@ -2,27 +2,25 @@
 <html lang="fr">
   <head>
     <title>Booki</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" >
     <meta
       name="decription"
       content="Booki le site de location d'Hébergements et des activités à faire dans toutes les villes"
-    />
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="./css/style.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <script
-      src="https://kit.fontawesome.com/21e8d4cf36.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    src="https://kit.fontawesome.com/21e8d4cf36.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="header__logo" src="./images/logo/Booki@3x.png" alt="Logo de booki" />
+      <img class="header__logo" src="./images/logo/Booki@3x.png" alt="Logo de booki">
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#accomodations">Hébergements</a></li>
@@ -31,24 +29,24 @@
       </nav>
     </header>
     <main>
-      <section class="search" id="search-bar">
+      <section class="search">
         <h1 class="search__title">
           Trouvez votre hébergement pour des vacances de rêve
         </h1>
         <p class="search__text">En plein centre ville ou en plein nature</p>
         <form action="#" class="search__form">
-          <label for="search" class="search__icon">
+          <label class="search__icon">
             <i class="fa-solid fa-location-dot icon"></i>
           </label>
           <input
             type="text"
-            id="search"
+            class="search__input"
             name="search"
             placeholder="Marseille, France"
-          />
-          <button type="submit" id="search__button">
+            >
+          <button type="submit" class="search__button">
             <span class="search__word">Rechercher</span>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass search__glass"></i>
           </button>
         </form>
       </section>
@@ -71,7 +69,7 @@
           </li>
         </ul>
         <p class="filters__text">
-          <i class="fa-solid fa-info"> </i> Plus de 100 logements sont
+          <i class="fa-solid fa-info"> </i> Plus de 500 logements sont
           disponibles dans cette ville
         </p>
       </section>
@@ -84,9 +82,9 @@
                 <img
                   class="accomodations__img"
                   src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Auberge la canebière</h3>
+                  <h3 class="accomodations__subtitle">Auberge la canebière</h3>
                   <p class="accomodations__text">Nuit à partir de 25€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
@@ -115,9 +113,9 @@
                   class="accomodations__img"
                   src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   alt="chambre twin deux lits séparés"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Hôtel du port</h3>
+                  <h3 class="accomodations__subtitle">Hôtel du port</h3>
                   <p class="accomodations__price">Nuit à partir de 52€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
@@ -146,10 +144,10 @@
                   class="accomodations__img"
                   src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   alt=" lit dans chambre partagée au sein d'une auberge de jeunesse"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Hôtel Les mouettes</h3>
+                  <p class="accomodations__price">Nuit à partir de 76€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -177,9 +175,9 @@
                   class="accomodations__img"
                   src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt="hostel"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Hôtel de la mer</h3>
+                  <h3 class="accomodations__subtitle">Hôtel de la mer</h3>
                   <p class="accomodations__price">Nuit à partir de 46€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
@@ -208,10 +206,10 @@
                   class="accomodations__img"
                   src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt="twin"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Auberge Le Panier</h3>
+                  <p class="accomodations__price">Nuit à partir de 23€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -239,10 +237,10 @@
                   class="accomodations__img"
                   src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   alt="chambre lumineuse"
-                />
+                >
                 <figcaption class="accomodations__content">
-                  <h3 class="accomodations__title">Hôtel de la mer</h3>
-                  <p class="accomodations__price">Nuit à partir de 46€</p>
+                  <h3 class="accomodations__subtitle">Hôtel Chez Amina</h3>
+                  <p class="accomodations__price">Nuit à partir de 96€</p>
                   <ul class="accomodations__list">
                     <li class="accomodations__star">
                       <i class="fa-solid fa-star active"></i>
@@ -268,7 +266,7 @@
 
         <section class="popular" id="popular">
           <h2 class="popular__title">
-            Les plus populaires <i class="fa-solid fa-chart-line"> </i>
+            Les plus populaires <i class="fa-solid fa-chart-line popular__icon"> </i>
           </h2>
           <a href="#" class="popular__link"
             ><article class="popular__card">
@@ -277,10 +275,10 @@
                   class="popular__img"
                   src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt="chambre luxieuse"
-                />
+                >
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Hôtel Le soleil du matin</h3>
+                  <p class="popular__price">Nuit à partir de 128€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -308,10 +306,10 @@
                   class="popular__img"
                   src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt="chambre style rustique avec du bois"
-                />
+                >
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Chambres d'hôtes Au coeur de l'eau</h3>
+                  <p class="popular__price">Nuit à partir de 71€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -339,10 +337,10 @@
                   class="popular__img"
                   src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt="chambre double avec grand lit pour une ou deux personnes"
-                />
+                >
                 <figcaption class="popular__content">
-                  <h3 class="popular__title-card">Hôtel de la mer</h3>
-                  <p class="popular__price">Nuit à partir de 46€</p>
+                  <h3 class="popular__title-card">Hôtel Bleu et Blanc</h3>
+                  <p class="popular__price">Nuit à partir de 68€</p>
                   <ul class="popular__list">
                     <li class="popular__star">
                       <i class="fa-solid fa-star active"></i>
@@ -371,9 +369,9 @@
           ><figure class="activities__card">
             <img
               class="activities__card-img"
-              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="Vieux port dans le coeur de Marseille"
-            />
+            >
             <figcaption class="activities__content">
               <h3 class="activities__card-title">Vieux Port</h3>
             </figcaption>
@@ -386,7 +384,7 @@
               class="activities__card-img"
               src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="Fort de pomègues"
-            />
+            >
             <figcaption class="activities__content">
               <h3 class="activities__card-title">Fort de Pomeguès</h3>
             </figcaption>
@@ -399,7 +397,7 @@
               class="activities__card-img"
               src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               alt="Parc national des calanques"
-            />
+            >
             <figcaption class="activities__content">
               <h3 class="activities__card-title">
                 Parc national des Calanques
@@ -412,9 +410,9 @@
           <figure class="activities__card">
             <img
               class="activities__card-img"
-              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="Notre dame de la garde, tout en hauteur de la ville"
-            />
+            >
             <figcaption class="activities__content">
               <h3 class="activities__card-title">Notre-Dame-de-la-garde</h3>
             </figcaption>
