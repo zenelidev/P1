@@ -132,7 +132,7 @@ header{
     border-bottom-right-radius: 15px;
     color: white;
     border-color: transparent;
-    width: 45px;
+    width: 121PX;
 }
 
 .search__icon{
@@ -533,7 +533,7 @@ footer{
     .popular__img{
         width: 90px;
         flex-basis:40%;
-        height: 190px;
+        height: 150px;
     }
     .activities__link{
         height:267px;
@@ -581,6 +581,10 @@ footer{
 
     .search__text{
         margin-bottom: 2em;
+    }
+
+    .search__button{
+        width: 45px;
     }
 
     .filters{
